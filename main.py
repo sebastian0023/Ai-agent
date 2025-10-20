@@ -7,7 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 @tool
-def add_numbers(a, b):
+def add_numbers(a: int, b: int) -> int:
+    """Add two numbers together and return the result."""
     return a + b
 
 def main():
